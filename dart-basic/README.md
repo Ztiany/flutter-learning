@@ -2,7 +2,7 @@
 
 ## 1 数据类型
 
-1. num、bool、String、List (也被称为 Array) 和 Map、Set、Rune (用于在字符串中表示 Unicode 字符)、Symbol。
+1. num、bool、String、List（也被称为 Array）和 Map、Set、Rune（用于在字符串中表示 Unicode 字符）、Symbol。
 2. 常量
 
 ## 2. 函数
