@@ -1,7 +1,7 @@
 //定义商品Item类
 class Item {
-  double price;
-  String name;
+  late double price;
+  late String name;
 
   Item(name, price) {
     this.name = name;
@@ -11,15 +11,18 @@ class Item {
 
 //定义购物车类
 class ShoppingCart {
-  String name;
-  DateTime date;
-  String code;
-  List<Item> bookings;
+  late String name;
+  late String code;
+  late DateTime date;
+  List<Item>? bookings;
 
-  price() {
-    double sum = 0.0;
-    for (var i in bookings) {
-      sum += i.price;
+  double price() {
+    var sum = 0.0;
+    var items = bookings;
+    if (items != null) {
+      for (var i in items) {
+        sum += i.price;
+      }
     }
     return sum;
   }
@@ -27,10 +30,10 @@ class ShoppingCart {
   ShoppingCart(name, code) {
     this.name = name;
     this.code = code;
-    this.date = DateTime.now();
+    date = DateTime.now();
   }
 
-  getInfo() {
+  String getInfo() {
     return '购物车信息:' +
         '\n-----------------------------' +
         '\n用户名: ' +
