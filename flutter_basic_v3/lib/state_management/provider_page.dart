@@ -72,7 +72,7 @@ class Welcome extends StatelessWidget {
 Widget buildProviderNameGameWidget() => ChangeNotifierProvider<NameModel>(
     create: (_) => NameModel(),
     child: Scaffold(
-      appBar: AppBar(title: const Text("buildInheritedNameGameWidget")),
+      appBar: AppBar(title: const Text("Provider")),
       body: const NameGame(),
     ));
 

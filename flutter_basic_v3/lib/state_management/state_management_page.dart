@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basic_v3/state_management/inherited_widget_page.dart';
 import 'package:flutter_basic_v3/state_management/provider_page.dart';
 import 'package:flutter_basic_v3/state_management/redux_page.dart';
 
 import '../common.dart';
-import 'inherited_widget_page.dart';
 
 List<RoutePage> _buildRoutes() {
   return [
     RoutePage("Inherited", (context) => buildInheritedNameGameWidget()),
-    RoutePage("Reduce", (context) => buildReduceNameGameWidget()),
+    RoutePage("Redux", (context) => buildReduxNameGameWidget()),
     RoutePage("Provider", (context) => buildProviderNameGameWidget()),
   ];
 }

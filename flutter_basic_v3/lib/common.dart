@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class RoutePage {
@@ -30,7 +31,9 @@ GridView buildListBody(List<RoutePage> pages) {
               style: const TextStyle(fontSize: 12),
             ),
             onPressed: () {
-              print("clicked-----------------------------------${pages[index].builder}");
+              if (kDebugMode) {
+                print("clicked-----------------------------------${pages[index].builder}");
+              }
               Navigator.push(context, MaterialPageRoute(builder: pages[index].builder));
             }),
       );

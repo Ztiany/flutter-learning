@@ -7,10 +7,10 @@ import 'dart:math';
 /// 初始
 final store = Store<NameStates>(reducer, initialState: NameStates.initState());
 
-Widget buildReduceNameGameWidget() => StoreProvider(
+Widget buildReduxNameGameWidget() => StoreProvider(
     store: store,
     child: Scaffold(
-      appBar: AppBar(title: const Text("buildInheritedNameGameWidget")),
+      appBar: AppBar(title: const Text("Redux")),
       body: NameGame(store: store),
     ));
 
