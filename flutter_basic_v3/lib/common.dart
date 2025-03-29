@@ -7,17 +7,27 @@ class RoutePage {
   RoutePage(this.name, this.builder);
 }
 
-buildListBodyWithTitle(String title, BuildContext context, List<RoutePage> pages) {
+buildBodyWithTitle(String title, Widget widget) {
   return Scaffold(
       //标题
       appBar: AppBar(
         title: Text(title),
       ),
       //内容
-      body: buildListBody(pages));
+      body: widget);
 }
 
-GridView buildListBody(List<RoutePage> pages) {
+buildListBodyWithTitle(String title, BuildContext context, List<RoutePage> pages, {int listSpanSize = 3}) {
+  return Scaffold(
+      //标题
+      appBar: AppBar(
+        title: Text(title),
+      ),
+      //内容
+      body: buildListBody(pages, spanSize: listSpanSize));
+}
+
+GridView buildListBody(List<RoutePage> pages, {int spanSize = 3}) {
   return GridView.builder(
     itemCount: pages.length,
     padding: const EdgeInsets.all(10),
@@ -30,11 +40,10 @@ GridView buildListBody(List<RoutePage> pages) {
               style: const TextStyle(fontSize: 12),
             ),
             onPressed: () {
-              print("clicked-----------------------------------${pages[index].builder}");
               Navigator.push(context, MaterialPageRoute(builder: pages[index].builder));
             }),
       );
     },
-    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
+    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: spanSize),
   );
 }

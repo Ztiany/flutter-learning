@@ -63,3 +63,7 @@ void _requestByDio() async{
     print('Error: ${response.statusCode}');
   }
 }
+
+void main(){
+  _requestByDio();
+}

@@ -22,7 +22,7 @@ void asyncFutureRule2() {
  */
 void asyncFutureRule3() {
   Future(() => print('f6'))
-      .then((_) => scheduleMicrotask(()=>print('f7')))
+      .then((_) => scheduleMicrotask(() => print('f7')))
       .then((_) => print('f8'));
 }
 
@@ -38,4 +38,8 @@ void asyncFutureRule4() {
       .then((_) => print('f8'));
 
   Future(() => print('f9'));
+}
+
+void main() {
+  asyncFutureRule4();
 }

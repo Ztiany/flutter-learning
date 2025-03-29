@@ -34,7 +34,7 @@ class NameInheritedWidget extends InheritedWidget {
 }
 
 Widget buildInheritedNameGameWidget() => Scaffold(
-      appBar: AppBar(title: const Text("buildInheritedNameGameWidget")),
+      appBar: AppBar(title: const Text("InheritedWidget")),
       body: const NameGame(),
     );
 
