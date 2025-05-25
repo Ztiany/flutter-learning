@@ -1,0 +1,6 @@
+[submodule "flutter-chatgpt_book_code"]
+	path = flutter-chatgpt_book_code
+	url = git@github.com:Ztiany/flutter-chatgpt_book_code.git
+[submodule "flutter-first-station"]
+	path = flutter-first-station
+	url = git@github.com:Ztiany/flutter-first-station.git
