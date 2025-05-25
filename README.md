@@ -1,4 +1,4 @@
 # Flutter and Dart Learning
 
-- dart-practice：learn the dart language;
-- flutter-practice: learn flutter.
+- darter：dart language practice.
+- playground: flutter practice.
