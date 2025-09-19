@@ -5,9 +5,9 @@ void asyncFutureRule1() {
 }
 
 /*
-    f6
-    f7
-    f8
+  f6
+  f7
+  f8
  */
 void asyncFutureRule2() {
   Future(() => print('f6'))
@@ -16,9 +16,9 @@ void asyncFutureRule2() {
 }
 
 /*
-    f6
-    f8
-    f7
+  f6
+  f8
+  f7
  */
 void asyncFutureRule3() {
   Future(() => print('f6'))

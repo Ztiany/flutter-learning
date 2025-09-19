@@ -5,7 +5,7 @@ description: A sample command-line application.
 # author: Lenovo <Ztiany3@gmail.com>
 
 environment:
-  sdk: '>=2.19.6 <3.6.0'
+  sdk: '>=2.19.6 <=3.9.3'
 
 #dependencies:
 #  path: ^1.6.0
