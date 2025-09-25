@@ -20,8 +20,8 @@ void _sample2_theParams() {
 }
 
 void _sample1_defineFunc() {
-  print('isZeorShort(1) = ${isZeroShort(1)}');
-  print('isZeor(1) = ${isZero(1)}');
+  print('isZeroShort(1) = ${isZeroShort(1)}');
+  print('isZero(1) = ${isZero(1)}');
 }
 
 // 如果函数体只有一行表达式，就比如上面示例中的 isZero 和 printInfo 函数，可以像
@@ -48,7 +48,7 @@ void enable2Flags({bool bold = true, bool hidden = false}) =>
 // 给参数增加 []，则意味着这些参数是可以忽略的，也就是可选参数。
 void optionalParams() {
   enable3Flags(true);
-  enable4Flags(false);
+  enable4Flags(false, true);
 }
 
 // 可忽略的参数在函数定义时用 [] 符号指定

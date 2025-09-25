@@ -1,5 +1,6 @@
 allprojects {
     repositories {
+        maven { url = uri("https://maven.aliyun.com/repository/gradle-plugin") }
         maven { url = uri("https://maven.aliyun.com/repository/public") }
         maven { url = uri("https://maven.aliyun.com/repository/central") }
         maven { url = uri("https://maven.aliyun.com/repository/apache-snapshots") }
@@ -8,7 +9,10 @@ allprojects {
     }
 }
 
-val newBuildDir: Directory = rootProject.layout.buildDirectory.dir("../../build").get()
+val newBuildDir: Directory =
+    rootProject.layout.buildDirectory
+        .dir("../../build")
+        .get()
 rootProject.layout.buildDirectory.value(newBuildDir)
 
 subprojects {

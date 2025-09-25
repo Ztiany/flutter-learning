@@ -8,7 +8,7 @@
 PRODUCT_NAME = playground
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = me.ztiany.flutter.playground
+PRODUCT_BUNDLE_IDENTIFIER = me.zhanty.playground
 
 // The copyright displayed in application information
-PRODUCT_COPYRIGHT = Copyright © 2025 me.ztiany.flutter. All rights reserved.
+PRODUCT_COPYRIGHT = Copyright © 2025 me.zhanty. All rights reserved.
